@@ -20,13 +20,14 @@ void setup() {  // this is run once.
 
 void draw() {  // this is run repeatedly.
     
-    set(a, b, color(0));
+    
+    set(a, b, color(1/(distance(helling, start, a, b)^2)));
     b = (helling*-a) + 300 - start;
     a = a+1;
 }
 
-void distance(int hellinglijn, int startlijn, int a, b) {
+void distance(int hellinglijn, int startlijn, int apunt, int bpunt) {
     int distance = 0;
-    distance = hellinglijn
-    return 
+    distance = (abs((hellinglijn*apunt)+(-1*bpunt)+start))/(sqrt((hellinglijn^2)+1))
+    return distance;
   }
